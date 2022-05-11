@@ -74,6 +74,12 @@ public class Mainadapter extends RecyclerView.Adapter<Mainadapter.ViewHolder>{
             super(itemView);
             tvName=itemView.findViewById(R.id.tv_name);
             tvNumber=itemView.findViewById(R.id.tv_number);
+             itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(activity.getApplicationContext(), "item", Toast.LENGTH_SHORT).show();
+                }
+            });
         }
     }
 }
